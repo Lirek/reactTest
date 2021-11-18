@@ -13,7 +13,6 @@ import Grid from '@material-ui/core/Grid';
 import Box from '@material-ui/core/Box';
 import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
 import Typography from '@material-ui/core/Typography';
-import Container from '@material-ui/core/Container';
 
 export const LoginScreen = () => {
     
@@ -32,7 +31,7 @@ export const LoginScreen = () => {
     
     return (
         <ThemeProvider theme={createMuiTheme(defaultTheme)}>
-            <Container maxWidth="xs" style={{marginTop:'15%'}}>
+            <Grid container xs={12} style={{flex:1,alignItems:'center',justifyContent:'center'}}>
                 <CssBaseline />
                 <Box
                 sx={{
@@ -40,12 +39,15 @@ export const LoginScreen = () => {
                     display: 'flex',
                     flexDirection: 'column',
                     alignItems: 'center',
+                    borderRadius:17,
+                    paddingX:5,
+                    paddingY:5
                 }}
                 >
-                <Avatar sx={{ m: 1, bgcolor: 'secondary.main' }}>
+                <Avatar sx={{ m: 1, bgcolor: 'secondary.main',marginTop:5, marginBottom:10}}>
                     <LockOutlinedIcon />
                 </Avatar>
-                <Typography component="h1" variant="h5">
+                <Typography component="h1" variant="h5" style={{marginTop:5}}>
                     Iniciar Sesion
                 </Typography>
                 <Box component="form" onSubmit={submit} noValidate sx={{ mt: 1 }}>
@@ -98,7 +100,7 @@ export const LoginScreen = () => {
                     </Grid>
                 </Box>
                 </Box>
-         </Container>
+         </Grid>
         </ThemeProvider>
     )
 }
