@@ -6,6 +6,7 @@ import { backendUrl } from "./api/api";
 import authProvider from "./providers/authProvider";
 import { LoginScreen } from "./pages/LoginScreen";
 import { Theme } from "./theme/Theme";
+import { MyDocuments } from "./pages/MyDocuments";
 
 
 
@@ -23,8 +24,8 @@ const dataProvider = simpleRestProvider(backendUrl,fetchJson);
 
 const App = () => {
     return(
-        <Admin dataProvider={dataProvider} authProvider={authProvider} loginPage={LoginScreen} theme={Theme}>
-            <Resource name="Home" show={Dashboard} />
+        <Admin dataProvider={dataProvider} authProvider={authProvider} loginPage={LoginScreen} theme={Theme} dashboard={Dashboard}>
+            <Resource name="Docs" list={MyDocuments} />
         </Admin>
     )
 }

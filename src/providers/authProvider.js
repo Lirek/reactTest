@@ -1,9 +1,11 @@
-import { backendUrl } from "../api/api"
+import { loginURL } from "../api/api"
 
 const authProvider = {
       
     login : ({username,password})=>{
-          const request = new Request(backendUrl+'/auth/login',
+            console.log(username);
+            console.log(password);
+          const request = new Request(loginURL,
           {
               method:'POST',
               body: JSON.stringify({correo:username,password}),
