@@ -9,7 +9,7 @@ export const MyDocuments = () => {
         <>
             <Grid container style={{flexDirection:'column'}}>
                 <Typography component="h1" variant="h5" style={{marginTop:5,marginBottom:10}}>
-                    Bienvenido USERNAME
+                    Bienvenido a tus documentos
                 </Typography>
 
                 <Divider style={{marginBottom:10}}/>
