@@ -16,26 +16,26 @@ export const MyDocuments = () => {
                 
                 <Grid container style={{flexDirection:'row'}}>
                     <Card style={{marginLeft:10,flex:1}}>
-                        <CardHeader title="Grafico 1" />
+                        <CardHeader title="Facturas emitidas" />
                         <CardContent>Lorem ipsum sic dolor amet... </CardContent>
                     </Card>
                     <Card style={{marginLeft:10, flex:1}}>
-                        <CardHeader title="Grafico 2" />
+                        <CardHeader title="Facturas recibidas" />
                         <CardContent>Lorem ipsum sic dolor amet... </CardContent>
                     </Card>
                 </Grid>
                 
                 <Grid container style={{flexDirection:'row',marginTop:10}}>
                     <Card style={{marginLeft:10,flex:1}}>
-                        <CardHeader title="Card 1" />
+                        <CardHeader title="Facturas con errores" />
                         <CardContent>Lorem ipsum sic dolor amet... </CardContent>
                     </Card>
                     <Card style={{marginLeft:10, flex:1}}>
-                        <CardHeader title="Card 2" />
+                        <CardHeader title="Total de clientes que usan nuestro medio de facturacion" />
                         <CardContent>Lorem ipsum sic dolor amet... </CardContent>
                     </Card>
                     <Card style={{marginLeft:10, flex:1}}>
-                        <CardHeader title="Card 3" />
+                        <CardHeader title="Facturas con errores" />
                         <CardContent>Lorem ipsum sic dolor amet... </CardContent>
                     </Card>
                 </Grid>
