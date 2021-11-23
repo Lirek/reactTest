@@ -57,8 +57,8 @@ const authProvider = {
     },
     getIdentity: () => {
         try {
-            const { uid, nombre, email,} = JSON.parse(localStorage.getItem('user'));
-            return Promise.resolve({ uid, nombre, email});
+            const { uid, nombre, correo,tipo_cedula,cedula} = JSON.parse(localStorage.getItem('user'));
+            return Promise.resolve({ uid, nombre, correo,tipo_cedula,cedula});
         } catch (error) {
             return Promise.reject(error);
         }
